@@ -6,11 +6,11 @@ public abstract class Ecommerce {
 	private int tamanho;
 	private int marca;
 	private String produto ;
-	private float preco;
+	private double preco;
 	
 	
 	public Ecommerce(int estoque, int tamanho, int marca,String produto,
-			float preco) {
+			double preco) {
 		super();
 		this.estoque = estoque;
 		this.tamanho = tamanho;
@@ -52,11 +52,11 @@ public abstract class Ecommerce {
 		this.marca = marca;
 	}
 
-	public float getPreco() {
+	public double getPreco() {
 		return preco;
 	}
 
-	public void setPreco(float preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 	
@@ -69,7 +69,7 @@ public abstract class Ecommerce {
 		this.setEstoque(this.getEstoque()- quantidade);
 		return true;
 	}
-	public void comprar(int quantidade) {
+	public void adicionar(int quantidade) {
 
 		this.setEstoque(this.getEstoque() + quantidade);
 

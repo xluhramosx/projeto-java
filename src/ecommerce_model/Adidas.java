@@ -4,7 +4,7 @@ public class Adidas extends Ecommerce {
 	
 	private String categoria;
 	
-	public Adidas(int estoque, int tamanho, int marca, String produto, float preco, String categoria) {
+	public Adidas(int estoque, int tamanho, int marca, String produto, double preco, String categoria) {
 		super(estoque, tamanho, marca, produto, preco);
 		this.categoria = categoria;
 	}

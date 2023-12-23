@@ -8,11 +8,11 @@ public interface EcommerceRepository {
 		public void procurarPorMarca(int marca);
 		public void listarTodas();
 		public void adicionar(Ecommerce ecommerce);
-		public void atualizar(Ecommerce ecommerce);
 		public void excluir(int produto);
 		
 		// Métodos de Venda
-		public void vender(int marca, float quantidade);
-		public void depositar(int marca, float quantidade);
+		public void vender(int marca, int quantidade);
+		public void depositar(int marca, int quantidade);
+		Ecommerce buscarNaCollection(int marca);
 		
 	}
