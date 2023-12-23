@@ -4,14 +4,12 @@ public class Nike extends Ecommerce {
 	
 	private String modelo;
 	
-	public Nike(int estoque, int tamanho, int marca, String produto, float preco, String modelo) {
+	public Nike(int estoque, int tamanho, int marca, String produto, double preco, String modelo) {
 		super(estoque, tamanho, marca, produto, preco);
 		this.modelo = modelo;
 	}
-	
-	
-    
-    public String getModelo() {
+
+	public String getModelo() {
 		return modelo;
 	}
 
